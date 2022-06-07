@@ -9,10 +9,10 @@ var = testing.result
 # Damos las credenciales para el login en la API de Twitter
 def main():
     twitter_auth_keys = {
-        "consumer_key": "YZb8B0E0oIZeiEdIQKnbWUMdO",
-        "consumer_secret": "tJQEIOkfM7k8vyio58htHotpb1yJUGgN48lTzZ6WSypec1b9Ms",
-        "access_token": "1015661463246172161-fSi4qDx9btUQqy6UWq9T0yaohxRcv5",
-        "access_token_secret": "Gi7sdW6cj7AosK1EaCLdrZqNYpcZmwxyAsKpuYcaDoYCx"
+        "consumer_key": "",
+        "consumer_secret": "",
+        "access_token": "",
+        "access_token_secret": ""
     }
 # Autentificamos y relizamos el proceso de log-in en Twitter
     auth = tweepy.OAuthHandler(
