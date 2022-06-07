@@ -6,14 +6,13 @@ import testing
 
 # Definimos una variable para que almacene el resultado del modulo que hemos creado anterior.
 var = testing.result
-
 # Damos las credenciales para el login en la API de Twitter
 def main():
     twitter_auth_keys = {
-        "consumer_key": "XXXXXXXXXXXXXXXXXXXXXXXXX",
-        "consumer_secret": "XXXXXXXXXXXXXXXXXXXXXXXXX",
-        "access_token": "XXXXXXXXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXX",
-        "access_token_secret": "XXXXXXXXXXXXXXXXXXXXXXXXX"
+        "consumer_key": "YZb8B0E0oIZeiEdIQKnbWUMdO",
+        "consumer_secret": "tJQEIOkfM7k8vyio58htHotpb1yJUGgN48lTzZ6WSypec1b9Ms",
+        "access_token": "1015661463246172161-fSi4qDx9btUQqy6UWq9T0yaohxRcv5",
+        "access_token_secret": "Gi7sdW6cj7AosK1EaCLdrZqNYpcZmwxyAsKpuYcaDoYCx"
     }
 # Autentificamos y relizamos el proceso de log-in en Twitter
     auth = tweepy.OAuthHandler(
@@ -44,14 +43,16 @@ def main():
             #Se postea el tweet si el tipo de archivo no devuelve error 
             post_result = api.update_status(media_ids=[media.media_id])
             #El archivo se elimina
-            os.remove(var)
+            shutil.rmtree(r"/home/pi/Pictures/pics/")
+            os.mkdir(r"/home/pi/Pictures/pics/")
             #Termina la ejecución y sale del bucle         
             break
         
         #Crea una excepción en caso de recibir un error
         except:
             #Se elimina aunque de fallo
-            os.remove(var)
+            shutil.rmtree(r"/home/pi/Pictures/pics/")
+            os.mkdir(r"/home/pi/Pictures/pics/")
             #Vuelve al principio del bucle
             continue
         

@@ -3,7 +3,7 @@
 import random, os
 import re
 
-path = r"/home/path/path/"
+path = r"/home/pi/Pictures/pics"
 
 
 random_filename = random.choice([
