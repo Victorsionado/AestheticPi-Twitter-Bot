@@ -4,10 +4,10 @@ import tweepy
 
 def main():
     twitter_auth_keys = {
-        "consumer_key": "PA1cClHXtfCZuNVbNSdCPhchO",
-        "consumer_secret": "m2PiLSeXgEfkHQ4GlqH3I8KRazTotOohnFFWy7WLp3bkZkYjfx",
-        "access_token": "1408723104742973441-pLi37z7SNKc46q7y9yEzTMFmMlu4S1",
-        "access_token_secret": "iNQr00SHjJD9NV3U4ywcI25LbUAKdGMiCe8ijh5ng7GwP"
+        "consumer_key": "",
+        "consumer_secret": "",
+        "access_token": "",
+        "access_token_secret": ""
         }
     # Autentificamos y relizamos el proceso de log-in en Twitter
     auth = tweepy.OAuthHandler(
